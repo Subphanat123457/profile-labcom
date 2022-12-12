@@ -1,0 +1,165 @@
+                                             :root {
+                                                --bg-color: rgb(255, 255, 255);
+                                                --typewriterSpeed: 1s;
+                                                --typewriterCharacters: 10;
+                                            }
+                                            
+                                            h2,
+                                            h3,
+                                            h4 {
+                                                font-family: "Comic Sans MS", cursive, sans-serif;
+                                                letter-spacing: 0.4px;
+                                                word-spacing: -3.8px;
+                                                color: #ffffff;
+                                                font-weight: normal;
+                                                text-decoration: none;
+                                                font-style: normal;
+                                                font-variant: normal;
+                                                text-transform: none;
+                                            }
+                                            
+                                            .texthead {
+                                                color: #FFFFFF;
+                                                text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+                                            }
+                                            
+                                            .leftbox {
+                                                max-width: 100%;
+                                                height: auto;
+                                                margin-top: 25%;
+                                                text-align: center;
+                                            }
+                                            
+                                            @font-face {
+                                                font-family: myFont;
+                                                src: url(ConnectionIii-Rj3W.otf);
+                                            }
+                                            
+                                            h1,
+                                            h2,
+                                            h3 {
+                                                font-family: myFont;
+                                                color: rgb(0, 0, 0);
+                                            }
+                                            
+                                            h1::before,
+                                            h1::after,
+                                            h2::before,
+                                            h2::after,
+                                            h3::before,
+                                            h3::after {
+                                                content: "";
+                                                position: absolute;
+                                                top: 0;
+                                                right: 0;
+                                                bottom: 0;
+                                                left: 0;
+                                            }
+                                            
+                                            .subtitle {
+                                                color: rgba(0, 0, 0, 0.7);
+                                                font-weight: 400;
+                                                font-size: 2rem;
+                                                /* set first step */
+                                                opacity: 0;
+                                                transform: translateY(1rem);
+                                                /* setting animation */
+                                                animation: fadeInUp 1000ms ease calc(var(--typewriterSpeed) + 500ms) forwards;
+                                            }
+                                            
+                                            @keyframes typewriter {
+                                                to {
+                                                    left: 15%;
+                                                }
+                                            }
+                                            
+                                            @keyframes blink {
+                                                to {
+                                                    background: transparent;
+                                                }
+                                            }
+                                            
+                                            @keyframes fadeInUp {
+                                                to {
+                                                    opacity: 1;
+                                                    transform: translateY(0);
+                                                }
+                                            }
+                                            
+                                            a.five:link {
+                                                color: #ff0000;
+                                                text-decoration: none;
+                                            }
+                                            
+                                            a.five:visited {
+                                                color: #ff00dd;
+                                                text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+                                                color: #FFFFFF;
+                                                background: #333333;
+                                            }
+                                            
+                                            a.five:hover {
+                                                text-decoration: underline;
+                                            }
+                                            
+                                            .boxsheaf {
+                                                width: 100px;
+                                                height: 100px;
+                                                margin-left: 50%;
+                                                margin-top: 15%;
+                                            }
+                                            
+                                            .box {
+                                                max-width: 100%;
+                                                max-height: 100%;
+                                            }
+                                            
+                                            .top-3 {
+                                                max-width: 100%;
+                                                background-color: #000000;
+                                                height: 50px;
+                                                padding-left: 10px;
+                                                padding-top: 1px;
+                                                align-items: center;
+                                                display: flex;
+                                                justify-content: center;
+                                            }
+                                            
+                                            body {
+                                                margin: 0px;
+                                            }
+                                            
+                                            .border {
+                                                border-left: 8px solid #1700A4;
+                                                margin-left: 50px;
+                                            }
+                                            
+                                            img {
+                                                border-radius: 50%;
+                                            }
+                                            
+                                            .profile {
+                                                align-items: center;
+                                                display: flex;
+                                                justify-content: center;
+                                                margin-top: 50px;
+                                            }
+                                            
+                                            .profile-1 {
+                                                max-width: 100%;
+                                                display: block;
+                                                flex-grow: 1;
+                                                flex-shrink: 1;
+                                                flex-basis: auto;
+                                                align-self: auto;
+                                                order: 0;
+                                            }
+                                            
+                                            .flex-container {
+                                                display: flex;
+                                                flex-direction: row;
+                                                flex-wrap: nowrap;
+                                                justify-content: center;
+                                                align-items: center;
+                                                padding-left: 15%;
+                                            }
